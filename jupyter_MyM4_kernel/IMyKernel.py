@@ -9,19 +9,20 @@ class IMyKernel():
     def get_kernelinfo(self)->str:
         pass
     @abstractmethod
+    def get_language_info(self):
+        pass
+    @abstractmethod
     def get_main_head(self)->str:
         pass
     @abstractmethod
     def get_main_foot(self)->str:
         pass
-    
     @abstractmethod
     def get_mymagics(self)->object:
         pass
     @abstractmethod
     def set_mymagics(self,object):
         pass
-    
     @abstractmethod
     def get_execution_count(self):
         pass
